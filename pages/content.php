@@ -1,7 +1,3 @@
-<?php
-require $_SERVER['DOCUMENT_ROOT'] . '/Rich Text Editor/admin/config/database.php';
-?>
-
 <html lang="en">
 
 <head>
