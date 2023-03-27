@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    overflow-x: hidden;
+    background: #f2f2f2;
+    font-size: 0.9rem;
+}
+
+main {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Text Editor Header */
+.text-editor-header {
+    background-color: #ecf0f1;
+    padding: 5px;
+
+}
+
+.text-editor-header small {
+    color: rgba(255, 6, 6, 0.568);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+
+.text-editor-header .btn {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-right: 5px;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+
+.text-editor-header .btn:active {
+    color: rgba(100, 100, 100, 1);
+    outline: 1px solid black;
+}
+
+/* Content  */
+.content {
+    min-height: 200px;
+    border: 1px solid #ecf0f1;
+    border-top: 0;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.next-page {
+    height: 3.2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #ecf0f1;
+
+}
+
+.btn-link {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background-color: purple;
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    border: 0;
+}
+
+.btn-link:active {
+    background-color: violet;
+}
+
+main form input[type=text] {
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        max-width: 350px;
+    }
+
+    .content img {
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
