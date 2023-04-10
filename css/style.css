@@ -29,12 +29,6 @@ main {
 
 }
 
-.text-editor-header small {
-    color: rgba(255, 6, 6, 0.568);
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
 
 .text-editor-header .btn {
     border: 0;
